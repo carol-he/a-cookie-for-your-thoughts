@@ -1,0 +1,94 @@
+html {
+    background-color: #efd5de;
+}
+#cookiebase {
+    width: 0;
+    height: 0;
+    border-right: 70px solid #e8c988;
+    border-top: 70px solid transparent;
+    border-left: 70px solid #e8c988;
+    border-bottom: 70px solid #e8c988;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    position: fixed;
+    z-index: 1;
+}
+#paper {
+    width: 100px;
+    height: 37px;
+    margin-left: 70px;
+    margin-top: 50px;
+    background-color: white;
+    position: fixed;
+    z-index: 0;
+    /* Rotate */
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+#cookieborder {
+    width: 0;
+    height: 0;
+    border-right: 80px solid #bfa46b;
+    border-top: 80px solid transparent;
+    border-left: 70px solid #bfa46b;
+    border-bottom: 70px solid #bfa46b;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    position: fixed;
+    z-index: -1;
+
+}
+#cookie {
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    -moz-border-radius: 75px;
+    -webkit-border-radius: 75px;
+    border-radius: 75px;
+    margin: auto;
+    position: absolute;
+    top: -10%; left: 0; bottom: 0; right: 0;
+    z-index: -2;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition:   transform .8s ease-in-out;
+
+}
+
+#cookieborder:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+#cookiebase:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+#cookie:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.fortune{
+  width: 300px;
+  height: 50px;
+  padding: 1.7%;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  font-size: 110%;
+  z-index: 9;
+  position: fixed;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #245ccc;
+  display: flex;
+justify-content: center; /* align horizontal */
+align-items: center;
+}
