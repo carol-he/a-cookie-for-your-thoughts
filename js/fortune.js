@@ -1,7 +1,7 @@
 let fortunes = [
   {"cn": "", "eng": "Be so completely yourself that everyone else feels safe to be themselves too."},
   {"cn": "你永远不会后悔善良", "eng": "You never regret being kind."},
-  {"cn": "", "eng": "Sometimes, you're the mess. Sometimes, you're the broom. On the hardest days, you'll have to be both."},
+  {"cn": "", "eng": "Sometimes, you're the mess. Sometimes, you're the broom. On the hardest days, you'll have to be both.", "long": true},
   {"cn": "", "eng": "Don’t trip over people who don’t value you."},
   {"cn": "", "eng": "Stop being tormented by everyone else’s reaction of you."},
   {"cn": "", "eng": "Sometimes self care is cracking open a cold one without the boys."},
@@ -20,6 +20,9 @@ function openCookie(){
   let fortune = document.createElement('div');
   fortune.className = 'fortune';
   fortune.textContent = fortunes[fortunes.length * Math.random() << 0].eng;
+  let topright = document.createElement('div');
+  topright.className = 'topright';
+  fortune.appendChild(topright);
   let paper = document.querySelector('#paper');
   paper.style.visibility = "hidden";
   document.body.appendChild(fortune);

@@ -74,10 +74,10 @@ html {
           transform: rotate(360deg);
 }
 
-.fortune{
+.fortune {
   width: 300px;
   height: 50px;
-  padding: 1.7%;
+  padding: .7%;
   background-color: white;
   text-align: center;
   justify-content: center;
@@ -87,8 +87,17 @@ html {
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #245ccc;
+  color: #1f4b91;
   display: flex;
 justify-content: center; /* align horizontal */
 align-items: center;
+}
+
+.topright {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #1f4b91;
 }
